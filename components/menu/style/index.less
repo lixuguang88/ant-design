@@ -207,7 +207,7 @@
           content: '';
           position: absolute;
           vertical-align: baseline;
-          background: #fff;
+          background: @text-color;
           background-image: linear-gradient(to right, @text-color, @text-color);
           width: 6px;
           height: 1.5px;
@@ -224,6 +224,7 @@
       > .@{menu-prefix-cls}-submenu-title:hover .@{menu-prefix-cls}-submenu-arrow {
         &:after,
         &:before {
+          background:  @primary-color;
           background: linear-gradient(to right, @primary-color, @primary-color);
         }
       }
